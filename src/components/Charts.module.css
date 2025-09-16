@@ -1,0 +1,32 @@
+.chartsContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.chartWrapper {
+  background-color: #243247;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+  height: 500px; 
+}
+
+.chartTitle {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #93a8c8;
+}
+
+@media (max-width: 768px) {
+  .chartsContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .chartWrapper {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}

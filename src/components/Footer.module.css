@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #243247;
+  color: #93a8c8;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  color: #93a8c8;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

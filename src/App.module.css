@@ -1,0 +1,50 @@
+.appContainer {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  background-color: #111822;
+  color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+.mainContent {
+  flex-grow: 1; 
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.titleSection {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.subtitle {
+  color: #93a8c8;
+  font-size: 14px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+/* --- Mobile Responsive Rules --- */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
