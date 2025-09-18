@@ -7,6 +7,7 @@ import styles from './Charts.module.css';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
 
 const Charts = ({ stats }) => {
+
   
   const lineChartData = {
     
@@ -26,9 +27,9 @@ const Charts = ({ stats }) => {
 
   const lineChartOptions = {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     layout: {
-      padding: 20,
+      padding: 10,
     },
   };
 
@@ -52,21 +53,21 @@ const Charts = ({ stats }) => {
         position: 'bottom',
       },
     },
-    layout: {
-      padding: 10,
-    },
   };
 
   return (
     <div className={styles.chartsContainer}>
       <div className={styles.chartWrapper}>
-        {/* Updated title to reflect the data source */}
         <h3 className={styles.chartTitle}>Case Trend (2023 Historical Data)</h3>
-        <Line options={lineChartOptions} data={lineChartData} />
+        <div className={styles.lineChartWrapper}>
+          <Line options={lineChartOptions} data={lineChartData} />
+        </div>
       </div>
       <div className={styles.chartWrapper}>
         <h3 className={styles.chartTitle}>Current Case Distribution</h3>
-        <Pie options={pieChartOptions} data={pieChartData} />
+        <div className={styles.pieChartWrapper}>
+          <Pie options={pieChartOptions} data={pieChartData} />
+        </div>
       </div>
     </div>
   );

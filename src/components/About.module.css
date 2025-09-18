@@ -1,0 +1,75 @@
+.aboutContainer {
+  background-color: #243247;
+  padding: 2rem 3rem;
+  border-radius: 0.75rem;
+  color: #f9fafb;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(75, 192, 192);
+  margin-bottom: 0.75rem;
+}
+
+.aboutContainer p {
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.techList, .apiList {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.techList li, .apiList li {
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+}
+
+.disclaimer {
+  font-style: italic;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 1rem;
+  border-left: 3px solid #4b5563;
+  padding-left: 1rem;
+}
+
+.techSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logoContainer {
+  display: flex;
+  gap: 1.5rem;
+  color: #9ca3af;
+}
+
+.techLogo {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .techSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

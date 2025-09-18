@@ -12,7 +12,7 @@ const LinkedInIcon = () => (
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p>Developed by Mikko Melgar</p>
+      <p>Mikko Melgar 2025</p>
       <div className={styles.socialLinks}>
         <a href="https://github.com/Meiko-mlgr/Sus-arcade" target="_blank" rel="noopener noreferrer" className={styles.link}>
           <GitHubIcon />
