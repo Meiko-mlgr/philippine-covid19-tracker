@@ -13,11 +13,13 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <LogoIcon />
-        <h2 className={styles.headerTitle}>COVID-19 Tracker</h2>
+        <div className={styles.stackedTitle}>
+          <span>COVID-19</span>
+          <span className={styles.trackerText}>Tracker</span>
+        </div>
       </div>
       <nav className={styles.nav}>
         <a href="#" className={styles.navLink}>Overview</a>
-        <a href="#" className={styles.navLink}>Vaccination</a>
         <a href="#" className={styles.navLink}>News</a>
         <a href="#" className={styles.navLink}>About</a>
       </nav>

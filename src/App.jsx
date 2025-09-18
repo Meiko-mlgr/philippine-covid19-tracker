@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './App.module.css';
-
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import Charts from './components/Charts';
 import Footer from './components/Footer';
 
-// API URL for the Philippines COVID-19 data
 const API_URL = 'https://disease.sh/v3/covid-19/countries/PH';
 
 function App() {
@@ -18,11 +16,23 @@ function App() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(API_URL);
-        const result = await response.json();
-        setData(result);
-      } catch (error) {
-        setError(error);
+        const API_HISTORICAL_URL = 'https://disease.sh/v3/covid-19/historical/PH?lastdays=365';
+
+        const [todayResponse, historicalResponse] = await Promise.all([
+          fetch(API_URL),
+          fetch(API_HISTORICAL_URL)
+        ]);
+        const todayData = await todayResponse.json();
+        const historicalData = await historicalResponse.json();
+
+        setData({
+          ...todayData,
+          timeline: historicalData.timeline,
+        });
+
+      } catch (err)
+ {
+        setError(err);
       } finally {
         setLoading(false);
       }
