@@ -75,6 +75,10 @@
   color: #93a8c8;
 }
 
+.navLink.active {
+  background-color: #243247;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .header {
