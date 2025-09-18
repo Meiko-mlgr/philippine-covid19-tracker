@@ -14,7 +14,7 @@ body,
 }
 
 body {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif; /* Changed font */
   background-color: #111827;
-  color: #F9FAFB; 
+  color: #F9FAFB;
 }
