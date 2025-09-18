@@ -8,7 +8,7 @@ const LogoIcon = () => (
   </svg>
 );
 
-const Header = () => {
+const Header = ({ activeView, setActiveView }) => {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
@@ -19,9 +19,9 @@ const Header = () => {
         </div>
       </div>
       <nav className={styles.nav}>
-        <a href="#" className={styles.navLink}>Overview</a>
-        <a href="#" className={styles.navLink}>News</a>
-        <a href="#" className={styles.navLink}>About</a>
+        <a href="#" className={`${styles.navLink} ${activeView === 'overview' ? styles.active : ''}`} onClick={() => setActiveView('overview')}>Overview</a>
+        <a href="#" className={`${styles.navLink} ${activeView === 'news' ? styles.active : ''}`} onClick={() => setActiveView('news')}>News</a>
+        <a href="#" className={`${styles.navLink} ${activeView === 'about' ? styles.active : ''}`} onClick={() => setActiveView('about')}>About</a>
       </nav>
     </header>
   );

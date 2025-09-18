@@ -23,3 +23,16 @@
   font-size: 1.75rem; 
   font-weight: 700;
 }
+
+@media (max-width: 480px) {
+  .card {
+    min-height: auto;
+    padding: 1rem;
+  }
+  .title {
+    font-size: 0.875rem;
+  }
+  .value {
+    font-size: 1.5rem;
+  }
+}

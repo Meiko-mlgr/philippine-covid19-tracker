@@ -1,16 +1,16 @@
 .chartsContainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .chartWrapper {
   background-color: #243247;
-  padding: 3rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
-  position: relative;
-  height: 400px; 
+  display: flex;
+  flex-direction: column;
 }
 
 .chartTitle {
@@ -20,13 +20,29 @@
   color: #93a8c8;
 }
 
-@media (max-width: 768px) {
-  .chartsContainer {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .chartWrapper {
-    height: 300px; /* Adjust height for smaller screens */
-  }
+.lineChartWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; 
+  height: 0;
+  flex-grow: 1; 
 }
+
+
+.pieChartWrapper {
+  position: relative;
+  width: 100%;
+
+  height: 0;
+  flex-grow: 1;
+}
+
+.lineChartWrapper > canvas,
+.pieChartWrapper > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
