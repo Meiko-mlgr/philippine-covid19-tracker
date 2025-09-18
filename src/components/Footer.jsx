@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <p>Developed by Mikko Melgar</p>
       <div className={styles.socialLinks}>
-        <a href="https://github.com/Meiko-mlgr/Sus-arcade" target="_blank" rel="noopener noreferrer" className={styles.link}>
+        <a href="https://github.com/Meiko-mlgr/philippine-covid19-tracker" target="_blank" rel="noopener noreferrer" className={styles.link}>
           <GitHubIcon />
         </a>
         <a href="https://www.linkedin.com/in/mikko-melgar-447069233" target="_blank" rel="noopener noreferrer" className={styles.link}>
