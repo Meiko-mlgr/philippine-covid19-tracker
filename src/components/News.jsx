@@ -8,7 +8,7 @@ const News = ({ articles }) => {
 
   return (
     <>
-      <h2 className={styles.sectionTitle}>Latest Health News in the Philippines</h2>
+      <h2 className={styles.sectionTitle}>Latest News in the Philippines</h2>
       <div className={styles.newsGrid}>
         {articles.map((article, index) => (
           <a href={article.link} key={index} target="_blank" rel="noopener noreferrer" className={styles.articleCard}>
