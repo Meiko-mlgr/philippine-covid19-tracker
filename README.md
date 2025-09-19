@@ -19,7 +19,7 @@ A responsive, data-driven dashboard that provides a summary of COVID-19 statisti
 
 * **Frontend:** [ReactJS](https://react.dev/) (with Hooks)
 * **Build Tool:** [Vite](https://vitejs.dev/)
-* **Charting:** [Chart.js](https://www.chartjs.org/) with [react-chartjs-2](https://react-chartjs-2.js.org/)
+* **Charting:** [Chart.js](https://www.chartjs.org/)
 * **Styling:** [CSS Modules](https://github.com/css-modules/css-modules)
 * **Version Control:** [Git](https://git-scm.com/) & [GitHub](https://github.com/)
 
